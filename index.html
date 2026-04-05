@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="index.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="calculator">
+        <h1 class="head">Calculator</h1>
+        <input type="text" id="display" disabled>
+        <div class="buttons">
+            <button onclick="clearDisplay()" class="clear">C</button>
+            <button onclick="backspace()">⌫</button>
+            <button onclick="app('%')">%</button>
+            <button onclick="app('/')">/</button>
+            <button onclick="app('7')">7</button>
+            <button onclick="app('8')">8</button>
+            <button onclick="app('9')">9</button>
+            <button onclick="app('*')">*</button>
+            <button onclick="app('4')">4</button>
+            <button onclick="app('5')">5</button>
+            <button onclick="app('6')">6</button>
+            <button onclick="app('-')">-</button>
+            <button onclick="app('1')">1</button>
+            <button onclick="app('2')">2</button>
+            <button onclick="app('3')">3</button>
+            <button onclick="app('+')">+</button>
+            <button onclick="app('0')">0</button>
+            <button onclick="app('.')">.</button>
+            <button onclick="calc()" class="equal">=</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</body>
+</html>
